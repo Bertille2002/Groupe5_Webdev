@@ -47,15 +47,13 @@ body::-webkit-scrollbar {
     max-height: 100%;
 }
 
-/* Centrer l'image de la console */
 .console_img {
     max-width: 90%;
     height: auto;
     display: block;
-    margin: 0 auto; /* Centrer l'image horizontalement */
+    margin: 0 auto; 
 }
 
-/* Centrer et ajuster le texte */
 #typed_text {
     position: absolute;
     top: 45%;
@@ -63,10 +61,10 @@ body::-webkit-scrollbar {
     transform: translate(-50%, -50%);
     font-family: "Ubuntu Mono", monospace;
     color: var(--color5);
-    font-size: 4vw; /* Taille réactive selon la largeur de la fenêtre */
+    font-size: 4vw; 
     line-height: 1.4;
-    text-align: left; /* Alignement du texte à gauche */
-    max-width: 90%; /* Limite la largeur du texte pour ne pas sortir de l'écran */
+    text-align: left; 
+    max-width: 90%; 
     white-space: pre-line; /* Permet de garder les sauts de ligne dans le texte */
     word-wrap: break-word; /* S'assure que le texte se coupe correctement */
 }
@@ -93,7 +91,6 @@ body::-webkit-scrollbar {
     }
 }
 
-/* Styles généraux pour la sidebar et les boutons */
 .sidenav {
     height: 100%;
     width: 300px;
@@ -130,16 +127,45 @@ body::-webkit-scrollbar {
 }
 
 .sidebarname {
-    font-family: "Open Sans", sans-serif;
-    font-size: 20pt;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 25pt;
     margin-top: 15px;
     margin-bottom: 0px;
 }
 
 .sidebarcitation {
-    font-family: "Kumbh Sans", sans-serif;
-    font-size: 12pt;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 16pt;
     margin: 0pt;
+}
+
+.sidebarauthor {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 8pt;
+    text-align-last: right;
+    margin-top: 3pt;
+    margin-right: 10pt;
+    margin-left: 10pt;
+    margin-bottom: 0pt;
+}
+
+.column {
+    float: left;
+    width: 25%;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+hr {
+    height: 1px;
+    background-color: var(--color5);
+    border: none;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .nav_buttons {
